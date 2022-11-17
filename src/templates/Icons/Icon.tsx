@@ -29,8 +29,8 @@ export type IconTypes =
   | 'feather'
   | 'antdesign';
 export interface IIcon extends TouchableOpacityProps {
-  name?: string;
-  type?: IconTypes;
+  name: string;
+  type: IconTypes;
   source?: ImageSourcePropType;
   disabled?: boolean;
   size?: number;
@@ -69,7 +69,7 @@ const Icon: React.FC<IIcon> = ({
   /**
    * size of icon (optional)
    */
-  size = Sizes.sm,
+  size = Sizes.lg,
   /**
    * Name of the icon to be shown
    *
