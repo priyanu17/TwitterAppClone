@@ -1,4 +1,7 @@
 export const Routes = {
-  home: 'Home',
   bottomTabs: 'BottomTabs',
+  home: 'Home',
+  messages: 'Messages',
+  search: 'Search',
+  notifications: 'Notifications',
 };
