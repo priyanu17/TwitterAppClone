@@ -7,6 +7,8 @@ import {SearchScreen} from '../screens/Search';
 import {MessagesScreen} from '../screens/Messages/index';
 import {NotificationsScreen} from '../screens/Notifications';
 import {Colors} from '../utils/constants/Colors';
+import {Sizes} from '../utils/constants/Sizes';
+import Avatar from '../templates/Avatar';
 
 const Tab = createBottomTabNavigator();
 
@@ -14,7 +16,6 @@ export const BottomTabNavigator = () => {
   return (
     <Tab.Navigator
       screenOptions={({route}) => ({
-        headerShown: false,
         tabBarLabel: '',
         tabBarIcon: ({focused}) => {
           let iconName = '';
@@ -43,15 +44,62 @@ export const BottomTabNavigator = () => {
             <Icon
               name={iconName}
               type={iconType}
-              color={focused ? Colors.twitterBlue : Colors.black}
+              color={focused ? Colors.twitterBlue : Colors.gray}
             />
           );
         },
       })}>
-      <Tab.Screen name={Routes.home} component={HomeScreen} />
-      <Tab.Screen name={Routes.search} component={SearchScreen} />
-      <Tab.Screen name={Routes.notifications} component={NotificationsScreen} />
-      <Tab.Screen name={Routes.messages} component={MessagesScreen} />
+      <Tab.Screen
+        name={Routes.home}
+        component={HomeScreen}
+        options={{
+          headerTitle: () => (
+            <Icon name={'twitter'} type={'entypo'} color={Colors.twitterBlue} />
+          ),
+          headerRight: () => (
+            <Icon
+              name={'star-four-points-outline'}
+              type={'material-community'}
+              color={Colors.twitterBlue}
+            />
+          ),
+
+          headerLeft: () => (
+            <Avatar
+              source={{
+                uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHLkybiP3I5YBAAE11TvQBCRNXt-00rlnEi9k8G5kQJDJ1zdG49ZZqdVFeRR3MqOlyXfM&usqp=CAU',
+              }}
+            />
+          ),
+          headerRightContainerStyle: {
+            paddingRight: Sizes.md,
+          },
+          headerLeftContainerStyle: {
+            paddingLeft: Sizes.md,
+          },
+        }}
+      />
+      <Tab.Screen
+        name={Routes.search}
+        options={{
+          headerShown: false,
+        }}
+        component={SearchScreen}
+      />
+      <Tab.Screen
+        name={Routes.notifications}
+        options={{
+          headerShown: false,
+        }}
+        component={NotificationsScreen}
+      />
+      <Tab.Screen
+        name={Routes.messages}
+        options={{
+          headerShown: false,
+        }}
+        component={MessagesScreen}
+      />
     </Tab.Navigator>
   );
 };

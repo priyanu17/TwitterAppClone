@@ -3,4 +3,5 @@ export const Colors = {
   white: 'white',
   pink: 'pink',
   twitterBlue: '#1DA1F2',
+  gray: 'gray',
 };

@@ -6,11 +6,11 @@ import {
   ImageSourcePropType,
   View,
   ViewStyle,
-  TouchableOpacity,
   ActivityIndicator,
 } from 'react-native';
 import {Colors} from '../../utils/constants/Colors';
 import {Sizes} from '../../utils/constants/Sizes';
+import TouchReceptor from '../TouchReceptor';
 import getIconType from './IconTypes';
 
 export type IconTypes =
@@ -121,7 +121,7 @@ const Icon: React.FC<IIcon> = ({
   containerStyle = {},
   ...rest
 }) => {
-  const Component = onPress !== null ? TouchableOpacity : View;
+  const Component = onPress !== null ? TouchReceptor : View;
   const IconComponent = getIconType(type);
 
   return (
@@ -135,7 +135,7 @@ const Icon: React.FC<IIcon> = ({
       style={containerStyle}>
       {loading ? (
         <View style={[styles.activity, {height: size, width: size}]}>
-          <ActivityIndicator />
+          <ActivityIndicator color={Colors.black} />
         </View>
       ) : source ? (
         <Image

@@ -23,7 +23,7 @@ export const ScreenContainer: React.FC<IScreenContainer> = ({
   children,
   containerStyle = {},
   edges,
-  barStyle = 'light-content',
+  barStyle = 'dark-content',
   ...rest
 }: IScreenContainer) => {
   return (
@@ -39,7 +39,7 @@ export const ScreenContainer: React.FC<IScreenContainer> = ({
         <StatusBar
           barStyle={barStyle}
           backgroundColor={
-            barStyle === 'light-content' ? Colors.black : Colors.white
+            barStyle === 'dark-content' ? Colors.white : Colors.black
           }
         />
         {children}
