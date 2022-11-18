@@ -5,6 +5,7 @@ import AsyncImage from '../../../templates/AsyncImage';
 import Avatar from '../../../templates/Avatar';
 import Icon from '../../../templates/Icons/Icon';
 import {styles} from './styles';
+import {Colors} from '../../../utils/constants/Colors';
 
 interface ITweet {
   tweet: TweetsEntity;
@@ -34,8 +35,7 @@ export const Tweet = ({tweet}: ITweet) => {
             containerStyle={styles.downArrow}
           />
         </View>
-        <Text>{tweet.content}</Text>
-
+        <Text style={styles.content}>{tweet.content}</Text>
         {tweet.image ? (
           <View style={styles.tweetImageContainer}>
             <AsyncImage targetURL={tweet.image} style={styles.tweetImage} />
@@ -43,6 +43,41 @@ export const Tweet = ({tweet}: ITweet) => {
         ) : (
           <></>
         )}
+        <View style={styles.tweetFooter}>
+          <View style={styles.iconContainer}>
+            <Icon
+              name={'ios-chatbubble-outline'}
+              type={'ionicon'}
+              color={Colors.gray}
+              containerStyle={styles.marginRight}
+            />
+            <Text style={styles.grayText}>{tweet.number_of_comments}</Text>
+          </View>
+          <View style={styles.iconContainer}>
+            <Icon
+              name={'retweet'}
+              type={'antdesign'}
+              color={Colors.gray}
+              containerStyle={styles.marginRight}
+            />
+            <Text style={styles.grayText}>{tweet.number_of_retweets}</Text>
+          </View>
+          <View style={styles.iconContainer}>
+            <Icon
+              name={'hearto'}
+              type={'antdesign'}
+              color={Colors.gray}
+              containerStyle={styles.marginRight}
+            />
+            <Text style={styles.grayText}>{tweet.number_of_likes}</Text>
+          </View>
+          <Icon
+            name={'share-2'}
+            type={'feather'}
+            color={Colors.gray}
+            containerStyle={styles.shareIcon}
+          />
+        </View>
       </View>
     </View>
   );

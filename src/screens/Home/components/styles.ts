@@ -22,6 +22,7 @@ export const styles = StyleSheet.create({
   downArrow: {
     flex: 1,
     alignItems: 'flex-end',
+    marginRight: Sizes.xs,
   },
   tweetImage: {
     width: '100%',
@@ -32,11 +33,35 @@ export const styles = StyleSheet.create({
     overflow: 'hidden',
     width: '100%',
     height: Sizes.tweetImageHeight,
+    marginBottom: Sizes.sm,
   },
   headerText: {
     marginRight: Sizes.sm,
   },
   grayText: {
     color: Colors.gray,
+  },
+  content: {
+    fontSize: Sizes.md,
+    marginVertical: Sizes.xs,
+    lineHeight: Sizes.lg,
+  },
+  tweetFooter: {
+    flexDirection: 'row',
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: Sizes.md,
+    marginTop: Sizes.xs,
+  },
+  iconContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  marginRight: {
+    marginRight: Sizes.sm,
+  },
+  shareIcon: {
+    marginRight: Sizes.md * 2,
   },
 });
