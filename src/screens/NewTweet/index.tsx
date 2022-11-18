@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Text, TextInput, TouchableOpacity, View} from 'react-native';
 import Icon from '../../templates/Icons/Icon';
 import {ScreenContainer} from '../../templates/ScreenContainer';
@@ -14,8 +14,10 @@ interface INewTweet {
 }
 
 export const NewTweetScreen = ({navigation}: INewTweet) => {
-  const goBack = () => navigation.goBack();
+  const [newTweet, setNewTweet] = useState<string>('');
+  const [image, setImage] = useState<string>('');
 
+  const goBack = () => navigation.goBack();
   const newTweetOnPress = () => {};
   return (
     <ScreenContainer containerStyle={styles.screenContainer}>
@@ -45,10 +47,14 @@ export const NewTweetScreen = ({navigation}: INewTweet) => {
           <TextInput
             placeholder={Strings.newTweet.inputPlaceholder}
             style={styles.input}
+            value={newTweet}
+            onChangeText={val => setNewTweet(val)}
           />
           <TextInput
             placeholder={Strings.newTweet.imageInputPlaceholder}
             style={styles.input}
+            value={image}
+            onChangeText={val => setImage(val)}
           />
         </View>
       </View>
