@@ -11,7 +11,7 @@ const avatarSizes = {
   xSmall: moderateScale(32),
   small: moderateScale(40),
   medium: moderateScale(50),
-  large: moderateScale(80),
+  large: moderateScale(65),
   xlarge: moderateScale(150),
 };
 

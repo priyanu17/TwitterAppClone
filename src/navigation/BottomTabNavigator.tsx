@@ -9,6 +9,7 @@ import {NotificationsScreen} from '../screens/Notifications';
 import {Colors} from '../utils/constants/Colors';
 import {Sizes} from '../utils/constants/Sizes';
 import Avatar from '../templates/Avatar';
+import userData from '../data/user.json';
 
 const Tab = createBottomTabNavigator();
 
@@ -72,7 +73,7 @@ export const BottomTabNavigator = () => {
           headerLeft: () => (
             <Avatar
               source={{
-                uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHLkybiP3I5YBAAE11TvQBCRNXt-00rlnEi9k8G5kQJDJ1zdG49ZZqdVFeRR3MqOlyXfM&usqp=CAU',
+                uri: userData.user.photo_url,
               }}
               size={'xSmall'}
             />

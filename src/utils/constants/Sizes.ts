@@ -9,4 +9,6 @@ export const Sizes = {
   lg: moderateScale(20),
   xl: moderateScale(24),
   tweetImageHeight: moderateScale(160),
+  newTweetIcon: moderateScale(32),
+  tweetInput: moderateScale(100),
 };

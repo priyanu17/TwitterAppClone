@@ -25,10 +25,25 @@
       },
       "createdAt": "2022-11-17T12:00:00.000Z",
       "content": "The Sun radiates this energy mainly as light, ultraviolet, and infrared radiation, and is the most important source of energy for life on Earth.",
-      "image": "https://webneel.com/daily/sites/default/files/images/daily/10-2013/3-nature-photography-cherry-tree.jpg",
+
       "number_of_comments": 89,
       "number_of_retweets": 66,
       "number_of_likes": 99
+    },
+    {
+      "id": "t3",
+      "user": {
+        "id": "user3",
+        "username": "username3",
+        "name": "Name Three",
+        "photo_url": "https://as2.ftcdn.net/v2/jpg/03/36/67/99/1000_F_336679967_ixI3YXrBqwt7Y6iRtGA8FzJRzk5QpWQO.jpg"
+      },
+      "image": "https://webneel.com/daily/sites/default/files/images/daily/10-2013/3-nature-photography-cherry-tree.jpg",
+      "createdAt": "2022-11-12T12:00:00.000Z",
+      "content": "Hello World.",
+      "number_of_comments": 34,
+      "number_of_retweets": 23,
+      "number_of_likes": 12
     }
   ]
 }

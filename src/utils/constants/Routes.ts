@@ -4,4 +4,5 @@ export const Routes = {
   messages: 'Messages',
   search: 'Search',
   notifications: 'Notifications',
+  newTweetScreen: 'NewTweet',
 };
