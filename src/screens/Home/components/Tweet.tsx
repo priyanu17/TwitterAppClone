@@ -6,6 +6,7 @@ import Avatar from '../../../templates/Avatar';
 import Icon from '../../../templates/Icons/Icon';
 import {styles} from './styles';
 import {Colors} from '../../../utils/constants/Colors';
+import moment from 'moment';
 
 interface ITweet {
   tweet: TweetsEntity;
@@ -27,7 +28,9 @@ export const Tweet = ({tweet}: ITweet) => {
           <Text style={[styles.headerText, styles.grayText]}>
             {`@${tweet.user.username}` || ''}
           </Text>
-          <Text style={[styles.headerText, styles.grayText]}>{'15s'}</Text>
+          <Text style={[styles.headerText, styles.grayText]}>
+            {moment(tweet.createdAt).fromNow()}
+          </Text>
           <Icon
             name={'chevron-down'}
             type={'font-awesome'}
