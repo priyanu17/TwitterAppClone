@@ -8,9 +8,9 @@ import TouchReceptor from '../TouchReceptor';
 type AvatarSize = 'xSmall' | 'small' | 'medium' | 'large' | 'xlarge';
 
 const avatarSizes = {
-  xSmall: moderateScale(20),
-  small: moderateScale(32),
-  medium: moderateScale(64),
+  xSmall: moderateScale(32),
+  small: moderateScale(40),
+  medium: moderateScale(50),
   large: moderateScale(80),
   xlarge: moderateScale(150),
 };

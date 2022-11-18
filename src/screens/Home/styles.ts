@@ -1,9 +1,9 @@
 import {StyleSheet} from 'react-native';
-import {moderateScale} from 'react-native-size-matters';
+import {Sizes} from '../../utils/constants/Sizes';
 
 export const styles = StyleSheet.create({
   screenContainer: {
-    paddingTop: moderateScale(0),
+    paddingTop: Sizes.md,
   },
   container: {},
 });

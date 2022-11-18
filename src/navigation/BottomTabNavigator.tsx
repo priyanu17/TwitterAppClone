@@ -74,6 +74,7 @@ export const BottomTabNavigator = () => {
               source={{
                 uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHLkybiP3I5YBAAE11TvQBCRNXt-00rlnEi9k8G5kQJDJ1zdG49ZZqdVFeRR3MqOlyXfM&usqp=CAU',
               }}
+              size={'xSmall'}
             />
           ),
           headerRightContainerStyle: {

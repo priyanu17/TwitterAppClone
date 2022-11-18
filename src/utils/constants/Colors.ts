@@ -4,4 +4,6 @@ export const Colors = {
   pink: 'pink',
   twitterBlue: '#1DA1F2',
   gray: 'gray',
+  lightGray: '#BBB',
+  lighterGray: '#DDD',
 };

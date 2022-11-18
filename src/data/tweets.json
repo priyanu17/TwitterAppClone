@@ -5,12 +5,12 @@
       "user": {
         "id": "user1",
         "username": "username1",
-        "name": "User One",
-        "photo_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcultivatedculture.com%2Flinkedin-profile-picture%2F&psig=AOvVaw23bHhSupSfZoVVBszNJGyy&ust=1668841009852000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMCvjK6Tt_sCFQAAAAAdAAAAABAE"
+        "name": "Name One",
+        "photo_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeeWl6Hu8zx_ppMM1AhoZkJMlIQhxxnt1irA&usqp=CAU"
       },
       "createdAt": "2022-11-16T12:00:00.000Z",
-      "content": "Lorem Ipsum",
-      "image": "https://wallpaperaccess.com/full/1129140.jpg",
+      "content": "The Sun is the star at the center of the Solar System. It is a nearly perfect ball of hot plasma, heated to incandescence by nuclear fusion reactions in its core. The Sun radiates this energy mainly as light, ultraviolet, and infrared radiation, and is the most important source of energy for life on Earth.",
+      "image": "https://images.squarespace-cdn.com/content/v1/56271d12e4b084f9ef01652c/1658187833624-L7Q7KCLH30XH99X64MGN/Sample%2B-%2BRiver%2BKayak%2BTour%2B%282%29.jpg?format=1000w",
       "number_of_comments": 123,
       "number_of_retweets": 34,
       "number_of_likes": 23
@@ -20,12 +20,12 @@
       "user": {
         "id": "user2",
         "username": "username2",
-        "name": "User Two",
-        "photo_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcultivatedculture.com%2Flinkedin-profile-picture%2F&psig=AOvVaw23bHhSupSfZoVVBszNJGyy&ust=1668841009852000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMCvjK6Tt_sCFQAAAAAdAAAAABAE"
+        "name": "Name Two",
+        "photo_url": "https://i.pinimg.com/originals/5c/28/47/5c28479809c9fe18e395feadfb76ca9d.jpg"
       },
       "createdAt": "2022-11-16T12:00:00.000Z",
-      "content": "Lorem Ipsum",
-      "image": "https://wallpaperaccess.com/full/1129140.jpg",
+      "content": "The Sun radiates this energy mainly as light, ultraviolet, and infrared radiation, and is the most important source of energy for life on Earth.",
+      "image": "https://webneel.com/daily/sites/default/files/images/daily/10-2013/3-nature-photography-cherry-tree.jpg",
       "number_of_comments": 89,
       "number_of_retweets": 66,
       "number_of_likes": 99
