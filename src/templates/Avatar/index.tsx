@@ -8,11 +8,11 @@ import TouchReceptor from '../TouchReceptor';
 type AvatarSize = 'xSmall' | 'small' | 'medium' | 'large' | 'xlarge';
 
 const avatarSizes = {
+  xSmall: moderateScale(20),
   small: moderateScale(32),
   medium: moderateScale(64),
   large: moderateScale(80),
   xlarge: moderateScale(150),
-  xSmall: moderateScale(20),
 };
 
 interface IAvatar {

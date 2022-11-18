@@ -54,7 +54,12 @@ export const BottomTabNavigator = () => {
         component={HomeScreen}
         options={{
           headerTitle: () => (
-            <Icon name={'twitter'} type={'entypo'} color={Colors.twitterBlue} />
+            <Icon
+              name={'twitter'}
+              type={'entypo'}
+              color={Colors.twitterBlue}
+              size={Sizes.xl}
+            />
           ),
           headerRight: () => (
             <Icon
